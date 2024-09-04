@@ -12,3 +12,7 @@ def home(request):
             form.save()
     data = ItemInfo.objects.all()
     return render(request,'home.html',{'form' :form,'data':data})        
+
+def showdata(request):
+    data = ItemInfo.objects.all()
+    return render(request,'dashboard.html',{'data':data}) 

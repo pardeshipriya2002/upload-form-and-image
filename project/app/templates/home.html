@@ -16,6 +16,27 @@
 
     </form>
     </div>
+
+    <!-- <div class="row">
+
+{% for i  in data %}
+<div class="col-sm-4">
+    <div class="card" style="width: 20rem; height: 30rem;">
+        <form action="" method="post">
+            {% csrf_token%}
+            <img src="{{i.item_image.url}}" class="card-img-top" style="width: 18rem; height: 20rem;">
+            <h5 class="card-title">{{i.item_name}}</h5>
+            <p class="card-title">{{i.item_desc}}</p>
+            <p class="card-title">{{i.item_price}}</p>
+            <a href="{{ i.item_resume.url }}">REsume</a>
+            <p class="card-text" hidden>{{i.id}}</p>
+            <button class="btn btn-primary"> Add to card</button>
+
+        </form>
+    </div>
+</div>
+{% endfor %}
+    </div> -->
     </center>
 </body>
 </html>
